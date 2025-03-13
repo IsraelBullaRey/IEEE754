@@ -98,13 +98,13 @@ public class ConversionIEEE754 {
     }
     
     private void arregloExp32bits() {
-        while (exponente.length() != 8) {
+        while (exponente.length() < 8) {
                 exponente = "0" + exponente;
         }
     }
     
     private void arregloExp64bits() {
-        while (exponente.length() != 11) {
+        while (exponente.length() < 11) {
                 exponente = "0" + exponente;
         }
     }
