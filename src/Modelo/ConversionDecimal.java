@@ -6,7 +6,8 @@ package Modelo;
 
 /**
  *
- * @author ACER 59AL
+ * @author 1152358 - Israel Bulla Rey.
+ *         1152384 - Jose Luis Jiménez Bayona.
  */
 public class ConversionDecimal {
     private String ieee;
