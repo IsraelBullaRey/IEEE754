@@ -17,19 +17,15 @@ public class ConversionIEEE754 {
     private String mantisa = "";
     
     
-    public void conversionPregunta(double numero, boolean dato) {
+    private void iniciar(double numero) {
         this.setNum(numero);
         this.setSigno("");
         this.setExponente("");
         this.setMantisa("");
-        if (dato) {
-            convertirDecimalIEEE32bits();
-        } else{
-            convertirDecimalIEEE64bits();
-        }
     }
     
-    private void convertirDecimalIEEE32bits() {
+    public void convertirDecimalIEEE32bits(double numero) {
+        iniciar(numero);
         if (num >= 0) signo = "0";
         if (num < 0) {
             signo = "1";
@@ -49,7 +45,8 @@ public class ConversionIEEE754 {
         }
     }
     
-    private void convertirDecimalIEEE64bits() {
+    public void convertirDecimalIEEE64bits(double numero) {
+        iniciar(numero);
         if (num >= 0) signo = "0";
         if (num < 0) {
             signo = "1";

@@ -19,7 +19,7 @@ public class ConversionDecimal {
     private double flotante;
     private double decimal;
     
-    public void preguntarConversion(String ieee, boolean dato) {
+    public void convertir(String ieee, boolean dato) {
         this.setIeee(ieee);
         this.setSigno("");
         this.setExponente("");
