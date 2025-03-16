@@ -17,7 +17,7 @@
 ## Ejecutar
 1. Verificar que se encuentren incluídas las librerias de **Java FX** en:
 	- `Properties -> Libraries -> Compile -> Classpath`
-	- `Properties -> Libraries -> Compile -> Modulepath`
+	- `Properties -> Libraries -> Run -> Modulepath`
 2. Con el proyecto abierto, para poder ejecutarlo es necesario ir a `Properties -> Run -> VM Options` y entre las comillas dobles `""` pegar la ruta de la ubicación del proyecto (misma dirección donde se clonó).
 3. Para asegurarse que se guardaron los cambios: 
 	`Run -> Clean and Build Project`
