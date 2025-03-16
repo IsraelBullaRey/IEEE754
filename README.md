@@ -1,5 +1,6 @@
-#Cómo ejecutar el proyecto
+# Cómo ejecutar el proyecto
 
+## Clonar
 1. En GitHub, navegue hasta la página principal del repositorio.
 2. Encima de la lista de archivos, haz clic en  Código.
 ![](https://docs.github.com/assets/cb-13128/mw-1440/images/help/repository/code-button.webp)
@@ -12,4 +13,12 @@
 7. Presione **enter** y espere que git realice el proceso.
 8. Abra **Apache NetBeans IDE** y en la barra de herramientas de la parte superior izquierda seleccione **File**.
 9. Seleccione la opción **Open Project** y busque la carpeta o ubicación donde clonó el repositorio y seleccione **Open Project** en la parte inferior derecha.
-10. Con el proyecto abierto, para poder ejecutarlo es necesario ir a `Properties -> Run -> VM Options` y entre las comillas dobles `""` pegar la ruta de la ubicación del proyecto (misma dirección donde se clonó).
+
+## Ejecutar
+1. Verificar que se encuentren incluídas las librerias de **Java FX** en:
+	- `Properties -> Libraries -> Compile -> Classpath`
+	- `Properties -> Libraries -> Compile -> Modulepath`
+2. Con el proyecto abierto, para poder ejecutarlo es necesario ir a `Properties -> Run -> VM Options` y entre las comillas dobles `""` pegar la ruta de la ubicación del proyecto (misma dirección donde se clonó).
+3. Para asegurarse que se guardaron los cambios: 
+	`Run -> Clean and Build Project`
+4. Ejecutar el programa.
