@@ -8,9 +8,7 @@
 4. Abra su explorador de archivos e ingrese a la carpeta o lugar donde desee clonar el proyeto.
 5. Abra **Git Bash**.
 6. Escriba `git clone ` y pegue la dirección copiada en el paso **3.**
-
-`git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-    `
+`git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY`
 7. Presione **enter** y espere que git realice el proceso.
 8. Abra **Apache NetBeans IDE** y en la barra de herramientas de la parte superior izquierda seleccione **File**.
 9. Seleccione la opción **Open Project** y busque la carpeta o ubicación donde clonó el repositorio y seleccione **Open Project** en la parte inferior derecha.
