@@ -36,6 +36,9 @@ public class ConversionIEEE754 {
             mantisa = "00000000000000000000000";
         } else {
             int exp = buscarExponente();
+            if (exp > 128 || exp < -127) {
+                throw  new RuntimeException("El valor ingresado no se puede convertir en 32 bits");
+            }
             exponente = decimalABinario(127 + exp);
             arregloExp32bits();
             hallarMantisa32bits();
@@ -57,6 +60,9 @@ public class ConversionIEEE754 {
             mantisa = "0000000000000000000000000000000000000000000000000000";
         } else {
             int exp = buscarExponente();
+            if (exp > 1024 || exp < -1023) {
+                throw  new RuntimeException("El valor ingresado no se puede convertir en 64 bits");
+            }
             exponente = decimalABinario(1023 + exp);
             arregloExp64bits();
             hallarMantisa64bits();
